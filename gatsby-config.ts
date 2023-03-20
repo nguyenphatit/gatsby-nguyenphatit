@@ -1,9 +1,5 @@
 import type { GatsbyConfig } from "gatsby"
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 const config: GatsbyConfig = {
   siteMetadata: {
     title: "nguyenphatit",
@@ -28,7 +24,7 @@ const config: GatsbyConfig = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          process.env.GATSBY_GA, // Google Analytics / GA
+          `G-9STG9HVMM3`, // Google Analytics / GA
           // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
           // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
