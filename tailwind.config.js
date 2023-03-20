@@ -11,6 +11,12 @@ module.exports = {
       sans: ['Roboto', ...defaultTheme.fontFamily.sans],
       serif: ['Anton', ...defaultTheme.fontFamily.serif],
     },
+    colors: {
+      "green-light": "#EAFB97",
+      "green-dark": "#C7E66E",
+      "purple-light": "#854EE8",
+      "purple-dark": "#2B184F",
+    },
     extend: {},
   },
   plugins: [],
