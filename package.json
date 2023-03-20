@@ -16,6 +16,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/anton": "^4.5.9",
+    "@fontsource/roboto": "^4.5.8",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "react": "^18.2.0",
