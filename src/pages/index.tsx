@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import HeroComponent from "../components/HeroComponent"
-import { SEO } from "../components/seo"
+import { SEO } from "../components/SEO"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
