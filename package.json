@@ -18,8 +18,10 @@
   "dependencies": {
     "@fontsource/anton": "^4.5.9",
     "@fontsource/roboto": "^4.5.8",
+    "dotenv": "^16.0.3",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-google-gtag": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
