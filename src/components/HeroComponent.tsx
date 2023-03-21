@@ -2,10 +2,11 @@ import React from "react";
 
 const HeroComponent: React.FC<{}> = () => {
   return (
-    <div className="min-h-screen bg-purple-light flex justify-center items-center">
-      <div className="container mx-auto">
-        <h3 className="font-bold text-center text-4xl text-green-dark">Welcome to</h3>
-        <h1 className="font-bold text-center text-6xl text-green-dark">nguyenphatit</h1>
+    <div className="min-h-screen bg-[url('../images/svg/hero-background.svg')] bg-center bg-no-repeat bg-cover flex justify-center items-center">
+      <div className="container mx-auto flex justify-center items-center flex-col">
+        <h1 className="text-9xl font-serif uppercase text-green-dark">Hello</h1>
+        <h1 className="text-9xl font-serif uppercase text-green-dark">Hello</h1>
+        <h1 className="text-9xl font-serif uppercase text-green-dark">Hello</h1>
       </div>
     </div>
   );
