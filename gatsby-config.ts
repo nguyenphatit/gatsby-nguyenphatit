@@ -37,7 +37,27 @@ const config: GatsbyConfig = {
           head: true,
         },
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `nguyenphatit`,
+        short_name: `PhatIT`,
+        start_url: `/`,
+        background_color: `#F1F1F1`,
+        theme_color: `#C7E66E`,
+        display: `standalone`,
+        icon: `src/images/svg/icon.svg`,
+        lang: `en`,
+        crossOrigin: `use-credentials`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en'
+      }
+    },
   ],
 }
 
