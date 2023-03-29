@@ -15,7 +15,7 @@ const Header = () => {
                     <span className="menu"></span>
                 </span>
             </label>
-            <div className="fixed right-0 top-0 h-screen w-screen translate-x-[100vw] translate-y-0 box-border pointer-events-none pt-[125px] bg-green-dark drawer-list">
+            <div className="fixed right-0 top-0 h-screen w-screen translate-x-[100vw] translate-y-0 box-border pointer-events-none pt-[125px] bg-green-dark bg-[url('../images/svg/sidebar-background.svg')] bg-center bg-no-repeat bg-cover drawer-list">
                 <ul className="h-full w-full list-none m-0 p-0 overflow-auto overflow-x-auto pointer-events-none">
                     <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
                         <a className="text-center block p-4 text-4xl hover:cursor-pointer menu-link font-bold text-purple-light" href="#">home</a>
