@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body[aria-scrollable="none"] {
-    overflow: hidden;
-    color: #212121;
-}
