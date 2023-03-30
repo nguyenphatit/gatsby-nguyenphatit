@@ -1,0 +1,24 @@
+.glitch-text {
+    transform: skew(-11deg);
+
+    &::after, &::before {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &::after {
+        content: attr(data-text);
+        padding-left: 0.2rem;
+        height: 42%;
+    }
+
+    &::before {
+        content: "";
+        background: var(--background);
+        height: 39%;
+    }
+}
