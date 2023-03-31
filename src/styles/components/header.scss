@@ -1,3 +1,5 @@
+@import '../base/base';
+
 input.hamburger {
     &:checked {
         & ~ .drawer-list {
@@ -49,7 +51,7 @@ label.hamburger {
     animation: borderLiquid 10s infinite ease-in-out;
     transition: animation 5s ease-in-out;
     &:hover {
-        cursor: pointer;
+        // cursor: pointer;
     }
     span {
         .close,
@@ -102,12 +104,6 @@ label.hamburger {
     }
 }
 
-label.hamburger {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-}
-
 .drawer-list {
     transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
     border-top-left-radius: 100vw;
@@ -124,7 +120,7 @@ label.hamburger {
 
     .text-stroke {
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #838383;
+        -webkit-text-stroke-color: rgba(#838383, 0.5);
         color: transparent;
     }
 }
