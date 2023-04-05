@@ -45,19 +45,19 @@ const Header = () => {
                             <span className="menu"></span>
                         </span>
                     </label>
-                    <div className="fixed right-0 top-0 h-screen w-screen translate-x-[100vw] translate-y-0 box-border pointer-events-none pt-[125px] bg-green-dark bg-[url('../images/svg/sidebar-background.svg')] bg-center bg-no-repeat bg-cover overflow-x-hidden drawer-list">
+                    <div className="fixed right-0 top-0 h-screen w-screen translate-x-[100vw] translate-y-0 box-border pointer-events-none pt-[125px] bg-lapis bg-[url('../images/svg/sidebar-background.svg')] bg-center bg-no-repeat bg-cover overflow-x-hidden drawer-list">
                         <ul className="h-full w-full list-none m-0 p-0 overflow-hidden overflow-x-hidden pointer-events-none">
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-6xl menu-link text-purple-light text-link" to="#" title="home" />
+                                <ALink className="text-center block p-4 text-5xl hover:text-8xl menu-link text-maize text-link" to="#" title="home" />
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-6xl menu-link text-purple-light text-link" to="#" title="project" />
+                                <ALink className="text-center block p-4 text-5xl hover:text-8xl menu-link text-maize text-link" to="#" title="project" />
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-6xl menu-link text-purple-light text-link" to="#" title="about" />
+                                <ALink className="text-center block p-4 text-5xl hover:text-8xl menu-link text-maize text-link" to="#" title="about" />
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw] mb-8">
-                                <ALink className="text-center block p-4 text-6xl menu-link text-purple-light text-link" to="#" title="contact" />
+                                <ALink className="text-center block p-4 text-5xl hover:text-8xl menu-link text-maize text-link" to="#" title="contact" />
                             </li>
                         </ul>
                     </div>
