@@ -106,15 +106,6 @@ label.hamburger {
     border-top-left-radius: 100vw;
     border-bottom-left-radius: 100vw;
 
-    .text-link {
-        transition: all .2s ease-in-out;
-        &:hover {
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: $maize;
-            color: transparent;
-        }
-    }
-
     .text-stroke {
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: rgba($black, 0.2);

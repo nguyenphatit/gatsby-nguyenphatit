@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import '../styles/components/cursor.scss';
 import useMousePosition from '../hooks/use-mouse-position';
 import { MouseContext } from '../context/mouse-context';
+import '../styles/components/cursor.scss';
 
 const Cursor = () => {
     const { cursorType } = useContext(MouseContext);
