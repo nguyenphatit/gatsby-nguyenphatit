@@ -5,7 +5,7 @@ interface Props {
   className?: string;
 }
 
-const SectionBase = ({ children, className }: Props) => {
+const SectionComponent = ({ children, className }: Props) => {
   return (
     <section className={`min-h-screen flex flex-col justify-around ${className}`}>
       {children}
@@ -13,4 +13,4 @@ const SectionBase = ({ children, className }: Props) => {
   )
 }
 
-export default SectionBase
+export default SectionComponent
