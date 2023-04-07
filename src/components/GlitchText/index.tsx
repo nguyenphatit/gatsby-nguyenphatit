@@ -1,16 +1,17 @@
 import React from 'react'
-import './../styles/glitch-text.css'
+import './styles.scss';
 
 interface Props {
     text: string;
-    background?: string;
+    background: string;
+    className?: string;
 }
 
-const GlitchText = ({ text, background = "#F1F1F1" }: Props) => {
+const GlitchText = ({ text, background, className }: Props) => {
     const style = { '--background': background } as React.CSSProperties;
     return (
         <div
-            className="select-none inline-block uppercase relative p-0 glitch-text"
+            className={`select-none inline-block uppercase relative p-0 glitch-text ${className}`}
             style={style}
             data-text={text.toUpperCase()}>
             {text}

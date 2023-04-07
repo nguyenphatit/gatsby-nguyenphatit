@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import '../styles/components/header.scss';
-import ALink from './ALink';
+import React, { useEffect, useState } from 'react';
+import './styles.scss';
 
 const Header = () => {
     const [isOpened, setIsOpened] = useState<boolean>(false);
@@ -42,16 +41,16 @@ const Header = () => {
                     <div className="fixed right-0 top-0 h-screen w-screen translate-x-[100vw] translate-y-0 box-border pointer-events-none pt-[125px] bg-lapis bg-[url('../images/svg/sidebar-background.svg')] bg-center bg-no-repeat bg-cover overflow-x-hidden drawer-list">
                         <ul className="h-full w-full list-none m-0 p-0 overflow-hidden overflow-x-hidden pointer-events-none">
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" to="#" title="home" />
+                                <a className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" href="#">home</a>
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" to="#" title="project" />
+                                <a className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" href="#">project</a>
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw]">
-                                <ALink className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" to="#" title="about" />
+                                <a className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" href="#">about</a>
                             </li>
                             <li className="list-none uppercase pointer-events-auto whitespace-nowrap box-border translate-x-[100vw] mb-8">
-                                <ALink className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" to="#" title="contact" />
+                                <a className="text-center block p-4 text-5xl md:text-8xl menu-link text-maize" href="#">contact</a>
                             </li>
                         </ul>
                     </div>
