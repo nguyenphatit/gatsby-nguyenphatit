@@ -11,9 +11,9 @@ const Layout = ({ children }: Props) => {
     return (
         <main className="relative">
             <Cursor />
-            <Header />
+            {/* <Header /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
         </main>
     )
 }

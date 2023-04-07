@@ -2,7 +2,7 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { SEO } from "../components/SEO"
 import Layout from "../components/Layout"
-import HeroComponent from "../components/HeroComponent"
+import HeroComponent from "../sections/HeroComponent"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (

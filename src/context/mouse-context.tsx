@@ -17,22 +17,53 @@ const MouseContextProvider = ({ children }: Props) => {
     };
     
     useEffect(() => {
-        const activeCursor = document.querySelectorAll('.active-cursor');
+        const links = document.querySelectorAll('a');
+        const buttons = document.querySelectorAll('button');
+        const classes = document.querySelectorAll('.active-cursor');
 
-        for (let i = 0; i < activeCursor.length; i++) {
-            activeCursor[i].addEventListener('mouseenter', onMouseEnter);
-            activeCursor[i].addEventListener('mouseleave', onMouseLeave);
-            activeCursor[i].addEventListener('mousedown', onMouseDown);
-            activeCursor[i].addEventListener('mouseup', onMouseUp)
-        }
+        links.forEach((element: any) => {
+            element.addEventListener('mouseenter', onMouseEnter);
+            element.addEventListener('mouseleave', onMouseLeave);
+            element.addEventListener('mousedown', onMouseDown);
+            element.addEventListener('mouseup', onMouseUp)
+        });
+
+        buttons.forEach((element: any) => {
+            element.addEventListener('mouseenter', onMouseEnter);
+            element.addEventListener('mouseleave', onMouseLeave);
+            element.addEventListener('mousedown', onMouseDown);
+            element.addEventListener('mouseup', onMouseUp)
+        });
+
+        classes.forEach((element: any) => {
+            element.addEventListener('mouseenter', onMouseEnter);
+            element.addEventListener('mouseleave', onMouseLeave);
+            element.addEventListener('mousedown', onMouseDown);
+            element.addEventListener('mouseup', onMouseUp)
+        });
 
         return (() => {
-            for (let i = 0; i < activeCursor.length; i++) {
-                activeCursor[i].removeEventListener('mouseenter', onMouseEnter);
-                activeCursor[i].removeEventListener('mouseleave', onMouseLeave);
-                activeCursor[i].removeEventListener('mousedown', onMouseDown);
-                activeCursor[i].removeEventListener('mouseup', onMouseUp)
-            }
+            links.forEach((element: any) => {
+                element.removeEventListener('mouseenter', onMouseEnter);
+                element.removeEventListener('mouseleave', onMouseLeave);
+                element.removeEventListener('mousedown', onMouseDown);
+                element.removeEventListener('mouseup', onMouseUp)
+            });
+
+            buttons.forEach((element: any) => {
+                element.removeEventListener('mouseenter', onMouseEnter);
+                element.removeEventListener('mouseleave', onMouseLeave);
+                element.removeEventListener('mousedown', onMouseDown);
+                element.removeEventListener('mouseup', onMouseUp)
+            });
+
+            classes.forEach((element: any) => {
+                element.removeEventListener('mouseenter', onMouseEnter);
+                element.removeEventListener('mouseleave', onMouseLeave);
+                element.removeEventListener('mousedown', onMouseDown);
+                element.removeEventListener('mouseup', onMouseUp)
+            });
+    
         })
     });
 

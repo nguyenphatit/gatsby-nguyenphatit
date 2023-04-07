@@ -1,12 +1,12 @@
 import React from 'react'
-import './../styles/glitch-text.css'
+import './styles.scss';
 
 interface Props {
     text: string;
-    background?: string;
+    background: string;
 }
 
-const GlitchText = ({ text, background = "#F1F1F1" }: Props) => {
+const GlitchText = ({ text, background }: Props) => {
     const style = { '--background': background } as React.CSSProperties;
     return (
         <div
