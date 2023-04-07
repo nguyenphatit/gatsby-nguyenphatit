@@ -1,11 +1,15 @@
+@import '../../styles/base';
+
 .cursor {
+    pointer-events: none;
+
     &__ring {
         position: fixed;
         top: 0;
         left: 0;
         width: 22px;
         height: 22px;
-        border: 2px solid rgba(#ff4079, 0.808);
+        border: 2px solid rgba($crayola, 0.808);
         border-radius: 100%;
         transform: translate(-50%, -50%);
         -webkit-transition-duration: 100ms;
@@ -16,22 +20,22 @@
         z-index: 999;
         pointer-events: none;
         &--hovered {
-            width: 50px;
-            height: 50px;
-            border-width: 3px;
-            border-color: rgb(249, 109, 109);
+            mix-blend-mode: difference;
+            width: 80px;
+            height: 80px;
+            background-color: $crayola;
         }
         &--down {
+            mix-blend-mode: difference;
             width: 30px;
             height: 30px;
-            border-width: 3px;
-            border-color: rgb(249, 109, 109);
+            background-color: $crayola;
         }
         &--up {
-            width: 50px;
-            height: 50px;
-            border-width: 3px;
-            border-color: rgb(249, 109, 109);
+            mix-blend-mode: difference;
+            width: 80px;
+            height: 80px;
+            background-color: $crayola;
         }
     }
 
@@ -41,12 +45,18 @@
         left: 50%;
         width: 8px;
         height: 8px;
-        background-color: #ff4079;
+        background-color: $crayola;
         border-radius: 100%;
         transform: translate(-50%, -50%);
         z-index: 999;
         pointer-events: none;
         &--hovered {
+            display: none;
+        }
+        &--down {
+            display: none;
+        }
+        &--up {
             display: none;
         }
     }

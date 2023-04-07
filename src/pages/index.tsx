@@ -2,12 +2,12 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { SEO } from "../components/SEO"
 import Layout from "../components/Layout"
-import HeroComponent from "../components/HeroComponent"
+import Hero from "../components/Hero"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <HeroComponent />
+      <Hero />
     </Layout>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import GlitchText from './GlitchText'
-import SectionComponent from './SectionComponent'
+import GlitchText from '../GlitchText'
+import SectionBase from '../SectionBase'
 
 interface Props { }
 
-const IntroduceComponent = () => {
+const Introduce = () => {
   return (
-    <SectionComponent className="bg-white min-h-[92vh]">
+    <SectionBase className="bg-white min-h-[92vh]">
       <div className="w-full">
         <h1 className="uppercase font-bold text-black font-sans text-6xl md:text-9xl leading-[0.8] w-full text-left px-4 md:container md:mx-auto">
           <GlitchText text="Creative" background="#F1F1F1" />
@@ -35,8 +35,8 @@ const IntroduceComponent = () => {
           </div>
         </div>
       </div>
-    </SectionComponent>
+    </SectionBase>
   )
 }
 
-export default IntroduceComponent
+export default Introduce
